@@ -1,0 +1,502 @@
+/* start Goloabal*/
+
+*{
+    -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     box-sizing:border-box;
+}
+
+body{
+    
+}
+
+.contaiour{
+    width: 1200px;
+    margin: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   /* overflow-y: hidden;*/
+    overflow-x:hidden;
+}
+h2,h3,h4{
+    font-weight: normal;
+}
+/*End goloable*/
+
+/* start my freamwork*/
+
+
+.clearfix{
+    clear: both;
+}
+
+.speacial-heading{
+    position: relative;
+}
+
+.speacial-heading:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:40px;
+    left: 0;
+    width: 51px;
+    border-bottom: 2px solid #333;
+}
+
+
+.spat{
+    border: 1px solid #eee;
+    margin: 40px 0;
+    display: block;
+}
+
+/*End Myfreamwork*/
+
+
+/*start Navbar*/
+.navbar{
+  font-size: 20px;
+    height: 0;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.navbar .brand{
+    float: left;
+    text-transform: uppercase;
+    width: 60%;
+   
+}
+
+.navbar .items{
+    float: left;
+    width: 40%;
+    
+}
+
+
+.navbar .items li{
+      display: inline-block;
+    padding: 9px 12px;
+    margin-top: 16px;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+.navbar .items li a{
+    text-decoration: none;
+    color:#fff;
+}
+.active{
+     border-bottom: 2px solid #32ae1b;
+    color: #32ae1b;
+    
+}
+ 
+.navbar .items li :hover,   active a{
+    border-bottom: 2px solid #32ae1b;
+    color: #32ae1b;
+}
+
+
+.navbar .items li a:hover, .active a{
+    color: #32ae1b;
+}
+
+
+/*End Navbar*/
+
+
+/*Strat Header*/
+.header{
+    background-image: url(../img/header.png);
+   background-size:cover;
+     background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+}
+.header .overlaye{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/*/////////////////////BXSLIDER/////////////////*/
+
+.header .bx-wrapper{
+box-shadow: none;
+border: 0;
+text-align: center;
+background: none;
+  height: 100%;
+}
+
+.header .bx-wrapper .bx-viewport{
+    height: 100% !important;
+}
+.header .slider{
+    height: 100%;
+}
+
+.header .slider li{
+    display: block;
+    color: white;
+
+}
+
+.header .slider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold;
+ }
+
+.header .slider li span{
+    color: #32ae1b;
+}
+/*End Header*/
+
+
+/*STRAT SERVICES*/
+.services
+{
+   width: 100%;
+    padding:  50px 20px;.
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.services h2{
+    margin:  50px;
+    
+}
+
+.services .section{
+    float: left;
+    width: 33.3333%;
+}
+
+.services .section i{
+   color:#6DD3BF;
+    margin-right: 5%;
+    width: 20%;
+    float: left;
+}
+
+.services .section .info{
+    width: 75%;
+    float: left;
+}
+
+.services .section .info h3{
+    
+    color: #333;
+}
+
+
+.services .section .info p{
+ color: #AEB8A6;
+}
+ 
+
+/*////////////////////////Our Team///////////////////////////////*/
+
+.OurTeam{
+    margin: 20px 20px;
+  
+}
+
+.OurTeam .box{
+    float: left;
+}
+
+.OurTeam .box p{
+    color: #888;
+    line-height: 1.6;
+}
+.OurTeam .box:first-child{
+    width: 26%;
+}
+
+.OurTeam .box:not(:first-child) {
+    width: 18.5%;
+   text-align: right;
+    position: relative;
+
+}
+.OurTeam .box:not(:first-child) img {
+    width:96%;
+   
+}
+
+.OurTeam .box:not(:first-child) .overlaye {
+    position: absolute;
+    top:1;
+    right: 0;
+    left:1;
+    bottom: 1;
+    background-color:  #730015;
+    height: 98%;
+    width: 96%;
+    display: none;
+}
+.OurTeam .box:not(:first-child):hover .overlaye {
+    display: block;
+    opacity: 0.6;
+}
+
+.OurTeam h2{
+   
+   padding-bottom: 22px;
+}
+
+
+/*END SERVICES*/
+
+
+/*///////////////////////////////////////////////*/
+
+/*Strat Textmoines*/
+
+.test{
+    background-image: url(../img/chicago.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    height: 600px;
+    position: relative;
+    text-align: center;
+     
+     margin-top: 50px;
+}
+
+.test .t-overlaye{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+   
+    
+}
+
+.test h2{
+    font-size: 40px;
+    margin: 40px 0 10px;
+}
+
+
+
+.test q{
+    font-size: 30px;
+    line-height: 2;
+    color:#d0d0d0;
+    display: block;
+}
+
+.test p{
+    font-size: 35px;
+    color:  #32ae1b;
+   
+}
+.test .t-slide > div{
+    display: none;
+}
+
+ .test .t-slide .t-active{
+    display: block;
+}
+
+
+
+/*End Testmoinse*/
+
+
+/* Strat Our Projects*/
+
+
+.pros{
+    padding: 60px 0;
+   
+
+}
+
+
+
+.pros ul li{
+    display: inline-block;
+    border: 1px solid #d4cccccc;
+    color: #a7a7a7a7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.pros ul li.selected{
+    background-color: #32ae1b;
+    color: #fff;
+}
+
+.pros .gellary{
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.pros .gellary .row > div:nth-child(2) {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.pros .gellary .row > div{
+    width: 32.66666666%;
+    float: left;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.pros .gellary .row > div img{
+    width: 100%;
+}
+.pros .gellary .row > div .over{
+      position: absolute;
+    top:0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    background-color:  #443d3e;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 396px;
+    opacity: 0.6;
+    display: none;
+}
+
+.pros .gellary .row > div .heart{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: none;
+}
+.pros .gellary .row > div:hover .over,
+.pros .gellary .row > div:hover .heart{
+    display: block;
+}
+
+.gellary .mix{
+    display: none;}
+
+
+/*End Our Projects*/
+
+
+
+/* Strat footer*/
+
+.footer{
+    background-color: #232323;
+    padding: 40px 0;
+    color: #6e6e6e;
+    overflow: hidden;
+}
+
+.footer .col{
+    width: 25%;
+    float: left;
+    
+}
+
+.footer .col h2{
+    color: #fff;
+  
+    font-size: 18px;
+}
+
+.footer .col p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer .col i{
+    display: inline-block;
+    color: #979797;
+    border: 1px solid #979797;
+    width: 40px;
+    padding: 10px;
+}
+
+
+.footer .tags span{
+      display: inline-block;
+    color: #979797;
+    border: 1px solid #979797;
+   
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
+}
+
+
+.footer .recent div{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.footer .recent img{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+}
+.footer .recent h4{
+    margin: 8px 0;
+    color: #ccc;
+    
+}
+
+
+.footer .blog li {
+    padding: 15px;
+    border-bottom: 1px solid #979797;
+}
+
+.footer .copyright{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*End footer*/
